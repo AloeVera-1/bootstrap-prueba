@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body style="background-color: #091413">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1
+            style="
+              display: flex;
+              justify-content: center;
+              color: rgb(255, 248, 240);
+              padding-top: 1rem;
+              font-family: Oswald;
+              letter-spacing: 0.5rem;
+            "
+          >
+            Contacto
+          </h1>
+        </div>
+      </div>
+      <div class="row" style="background-color: #285a48">
+        <div class="col-md-12">
+          <nav
+            class="navbar navbar-expand-md navbar-dark"
+            style="align-content: center"
+          >
+            <a
+              href="index.html"
+              class="navbar-item text-light"
+              target="_self"
+              style="
+                text-decoration: none;
+                margin-top: -1rem;
+                padding-top: 0.7rem;
+              "
+              >Inicio</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#enlaces"
+              aria-controls="enlaces"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="enlaces">
+              <ul
+                class="navbar-nav"
+                style="margin-top: -1rem; padding-top: 0.7rem"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html" target="_self">
+                    Galería</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" target="_self">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row py-2">
+        <div class="col-md-11 text-light" style="background-color: #091413">
+          <h1>¡Ponte en contacto con nosotros!</h1>
+          <h3 style="margin-top: -0.9rem">
+            Sugerencias, dudas, planeaciones, etc.
+          </h3>
+        </div>
+        <div class="col-md-1">
+          <img src="java.jpg" alt="java" width="80px" />
+        </div>
+      </div>
+      <div class="row py-3 ps-1 text-light" style="background-color: #285a48">
+        <div class="col-md-12 p-2">
+          <form>
+            <div class="form-group row mt-3">
+              <label for="nombre" class="col-sm-2 col-form-label"
+                >Nombre:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombreUsuario"
+                  class="form-control"
+                  required="required"
+                  placeholder="Introduce tu nombre"
+                />
+              </div>
+            </div>
+            <div class="form-group row mt-3">
+              <label for="a" class="col-sm-2 col-form-label">Apellidos: </label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  id="ap"
+                  name="apellidosUsuario"
+                  class="form-control"
+                  required="required"
+                  placeholder="Introduce tus Apellidos"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mt-3">
+              <label for="correo" class="col-sm-2 col-form-label"
+                >Correo Electrónico:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  id="correo"
+                  name="correoUsuario"
+                  class="form-control"
+                  required="required"
+                  placeholder="Introduce tu Correo Electrónico"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mt-3">
+              <label class="col-sm-4 col-form-label"
+                >¿Desea recibir correos de nuestra parte?
+              </label>
+              <div class="col-sm-4">
+                <input
+                  type="radio"
+                  name="respuestaCorreo"
+                  value="si"
+                  class="form-check-input"
+                  id="si"
+                />
+                <label for="si" class="form-check-label">Si</label>
+              </div>
+              <div class="col-sm-4">
+                <input
+                  type="radio"
+                  name="respuestaCorreo"
+                  value="no"
+                  class="form-check-input"
+                  id="no"
+                />
+                <label for="no" class="form-check-label">No</label>
+              </div>
+            </div>
+
+            <div class="form-group row mt-3">
+              <label class="col-sm-3 col-form-label">
+                ¿Cual es el motivo?
+              </label>
+              <div class="col-sm-3" style="margin-top: 0.55rem">
+                <input
+                  type="checkbox"
+                  id="quejas"
+                  name="cursos"
+                  value="programacion"
+                  class="form-check-input"
+                />
+                <label
+                  for="quejas"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >Quejas</label
+                >
+              </div>
+              <div class="col-sm-3" style="margin-top: 0.55rem">
+                <input
+                  type="checkbox"
+                  id="sugerencias"
+                  name="cursos"
+                  value="basesdedatos"
+                  class="form-check-input"
+                />
+                <label
+                  for="sugerencias"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >Sugerencias</label
+                >
+              </div>
+              <div class="col-sm-3" style="margin-top: 0.55rem">
+                <input
+                  type="checkbox"
+                  id="evento"
+                  name="cursos"
+                  value="redes"
+                  class="form-check-input"
+                />
+                <label
+                  for="evento"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >Planear Eventos</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group row mt-3">
+              <label class="col-sm-2 col-form-label">
+                ¿Sobre alguna sucursal en específico?
+              </label>
+              <div class="col-sm-3" style="margin-top: 0.55rem">
+                <input
+                  type="radio"
+                  id="centro"
+                  name="cursos"
+                  value="programacion"
+                  class="form-check-input"
+                />
+                <label
+                  for="centro"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >Ciudad de México</label
+                >
+              </div>
+              <div class="col-sm-3" style="margin-top: 0.55rem">
+                <input
+                  type="radio"
+                  id="guad"
+                  name="cursos"
+                  value="basesdedatos"
+                  class="form-check-input"
+                />
+                <label
+                  for="guad"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >Jalisco</label
+                >
+              </div>
+              <div class="col-sm-3" style="margin-top: 0.55rem">
+                <input
+                  type="radio"
+                  id="puebla"
+                  name="cursos"
+                  value="redes"
+                  class="form-check-input"
+                />
+                <label
+                  for="puebla"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >Puebla</label
+                >
+              </div>
+              <div class="col-sm-1" style="margin-top: 0.55rem">
+                <input
+                  type="radio"
+                  id="noo"
+                  name="cursos"
+                  value="redes"
+                  class="form-check-input"
+                />
+                <label
+                  for="noo"
+                  class="form-check-label"
+                  style="padding-left: 0.2rem"
+                  >No</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group row mt-3 py-3">
+              <label for="comentario" class="col-sm-4 col-form-label"
+                >Información Adicional:
+              </label>
+              <div class="col-sm-8">
+                <textarea
+                  name="comentario"
+                  id="comentario"
+                  class="form-control"
+                  required="required"
+                  placeholder="Escribe aqui lo que quieras que sepamos. Lo leemos, no importa la extensión."
+                ></textarea>
+              </div>
+            </div>
+            <button class="btn btn-danger btn-lg btn-block" type="submit">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
